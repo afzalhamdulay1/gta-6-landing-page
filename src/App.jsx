@@ -1,14 +1,17 @@
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/all';
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+import Hero from "./sections/Hero";
+import Navbar from "./sections/Navbar";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const App = () => {
   return (
     <main>
-      <div className='text-pink'>Welcome to the world of Gta 6 and gsap</div>
+      <Navbar />
+      <Hero />
     </main>
-  )
-}
+  );
+};
 
-export default App
+export default App;
