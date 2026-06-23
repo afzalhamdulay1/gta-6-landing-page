@@ -24,6 +24,7 @@ const SecondVideo = () => {
     tl.to(".lucia", { opacity: 1, duration: 2, ease: "sine" });
 
     // Use a progress proxy (0 to 1) so we don't need video.duration during creation
+
     const scrollVideo = { progress: 0 };
     tl.to(
       scrollVideo,
