@@ -32,7 +32,12 @@ const Hero = () => {
         scale: 1,
         ease: "power1.inOut",
       })
-      .to(".mask-wrapper", { maskSize: maskSize, ease: "power1.inOut" }, "<")
+      .to(".mask-wrapper", { maskSize: maskSize, ease: "sine.inOut" }, "<")
+      .to(
+        ".mask-overlay",
+        { duration: 0.1, opacity: 1, ease: "power1.inOut" },
+        "<+80%",
+      )
       .to(".mask-wrapper", { opacity: 0 })
       .to(
         ".overlay-logo",
@@ -58,12 +63,13 @@ const Hero = () => {
 
   return (
     <section className="hero-section">
-      <div className="size-full mask-wrapper">
+      <div className="size-full mask-wrapper relative">
         <img
           src="/images/hero-bg.webp"
           className="scale-out"
           alt="background"
         />
+        <div className="absolute inset-0 bg-white opacity-0 mask-overlay pointer-events-none" />
         <img
           src="/images/hero-text.webp"
           className="title-logo fade-out"
@@ -75,7 +81,7 @@ const Hero = () => {
           className="trailer-logo fade-out"
         />
         <div className="play-img fade-out">
-          <img src="/images/play.png" alt="playt" className="w-7 ml-1" />
+          <img src="/images/play.png" alt="play" className="w-7 ml-1" />
         </div>
       </div>
 
