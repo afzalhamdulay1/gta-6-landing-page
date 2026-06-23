@@ -15,7 +15,7 @@ const SecondVideo = () => {
       scrollTrigger: {
         trigger: ".lucia",
         start: "top top",
-        end: "+=300%",
+        end: "+=200%",
         scrub: 2,
         pin: true,
       },

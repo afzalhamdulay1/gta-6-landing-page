@@ -3,14 +3,14 @@ import { useGSAP } from "@gsap/react";
 
 const Jason = () => {
   useGSAP(() => {
-    gsap.set(".jason", { marginTop: "-80vh" });
+    gsap.set(".jason", { marginTop: "-120vh" });
 
     gsap
       .timeline({
         scrollTrigger: {
           trigger: ".jason",
-          start: "top 90%",
-          end: "10% center",
+          start: "top top",
+          end: "top 10%",
           scrub: 2,
         },
       })

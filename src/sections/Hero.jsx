@@ -32,13 +32,17 @@ const Hero = () => {
         scale: 1,
         ease: "power1.inOut",
       })
-      .to(".mask-wrapper", { maskSize: maskSize, ease: "sine.inOut" }, "<")
+      .to(
+        ".mask-wrapper",
+        { maskSize: maskSize, maskPosition: maskPos, ease: "sine.inOut" },
+        "<",
+      )
       .to(
         ".mask-overlay",
         { duration: 0.1, opacity: 1, ease: "power1.inOut" },
         "<+80%",
       )
-      .to(".mask-wrapper", { opacity: 0 })
+      // .to(".mask-wrapper", { opacity: 0 })
       .to(
         ".overlay-logo",
         {
@@ -85,21 +89,13 @@ const Hero = () => {
         </div>
       </div>
 
-      <div>
-        <img
-          src="/images/big-hero-text.svg"
-          alt="logo"
-          className="size-full object-cover mask-logo"
-        />
-      </div>
-
-      <div className="fake-logo-wrapper">
+      {/* <div className="fake-logo-wrapper">
         <img
           src="/images/big-hero-text.svg"
           className="overlay-logo"
           alt="overlay-logo"
         />
-      </div>
+      </div> */}
 
       <ComingSoon />
     </section>
