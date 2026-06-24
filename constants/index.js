@@ -1,31 +1,31 @@
 import { useMediaQuery } from "react-responsive";
 
 export const useMaskSettings = () => {
-  const isMobile = useMediaQuery({ maxWidth: 768 });
-  const isTablet = useMediaQuery({ minWidth: 769, maxWidth: 1024 });
+  const isMobile = useMediaQuery({ maxWidth: 767.98 });
+  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023.98 });
 
   if (isMobile) {
     return {
-      initialMaskPos: "50% -1500vh",
-      initialMaskSize: "3100% 3100%",
-      maskPos: "50% 7vh",
-      maskSize: "50% 50%",
+      initialMaskPos: "50% -2000vh",
+      initialMaskSize: "20000% auto",
+      maskPos: "50% 15vh",
+      maskSize: "55% auto",
     };
   }
 
   if (isTablet) {
     return {
-      initialMaskPos: "50% -1700vh",
-      initialMaskSize: "3500% 3500%",
+      initialMaskPos: "50% -700vh",
+      initialMaskSize: "5000% auto",
       maskPos: "50% 17vh",
-      maskSize: "30% 30%",
+      maskSize: "30% auto",
     };
   }
 
   return {
-    initialMaskPos: "50% 20%",
-    initialMaskSize: "4000% 4000%",
-    maskPos: "50% 21%",
-    maskSize: "21% 21%",
+    initialMaskPos: "50% -1500vh",
+    initialMaskSize: "5000% auto",
+    maskPos: "50% 15vh",
+    maskSize: "15% auto",
   };
 };

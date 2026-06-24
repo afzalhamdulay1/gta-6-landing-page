@@ -29,29 +29,18 @@ const Hero = () => {
 
     tl.to(".fade-out", { opacity: 0, ease: "power1.inOut" })
       .to(".scale-out", {
-        scale: 1,
+        scale: 1.1,
         ease: "power1.inOut",
       })
       .to(
         ".mask-wrapper",
         { maskSize: maskSize, maskPosition: maskPos, ease: "sine.inOut" },
-        "<",
+        "<+0.1",
       )
       .to(
         ".mask-overlay",
         { duration: 0.1, opacity: 1, ease: "power1.inOut" },
         "<+80%",
-      )
-      // .to(".mask-wrapper", { opacity: 0 })
-      .to(
-        ".overlay-logo",
-        {
-          opacity: 1,
-          onComplete: () => {
-            gsap.to(".overlay-logo", { opacity: 0 });
-          },
-        },
-        "<",
       )
       .to(
         ".entrance-message",
@@ -88,14 +77,6 @@ const Hero = () => {
           <img src="/images/play.png" alt="play" className="w-7 ml-1" />
         </div>
       </div>
-
-      {/* <div className="fake-logo-wrapper">
-        <img
-          src="/images/big-hero-text.svg"
-          className="overlay-logo"
-          alt="overlay-logo"
-        />
-      </div> */}
 
       <ComingSoon />
     </section>
