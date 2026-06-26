@@ -55,7 +55,7 @@ const Hero = () => {
   });
 
   return (
-    <section className="hero-section">
+    <section className="hero-section h-dvh">
       <div className="size-full mask-wrapper relative">
         <img src="/images/fifa-bg.png" className="scale-out" alt="background" />
         <div className="absolute inset-0 bg-white opacity-0 mask-overlay pointer-events-none" />

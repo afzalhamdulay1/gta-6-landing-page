@@ -1,25 +1,6 @@
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-
 const Outro = () => {
-  useGSAP(() => {
-    gsap.set(".final-message", { marginTop: "-100vh", opacity: 0 });
-
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".final-message",
-        start: "top 30%",
-        end: "top 10%",
-        scrub: true,
-      },
-    });
-
-    tl.to(".final-content", { opacity: 0, duration: 1, ease: "power1.inOut" });
-    tl.to(".final-message", { opacity: 1, duration: 1, ease: "power1.inOut" });
-  });
-
   return (
-    <section className="final-message">
+    <div className="final-message absolute inset-0 z-50 opacity-0 pointer-events-none">
       <div className="h-full col-center gap-10">
         <img src="/images/logo.webp" alt="logo" className="md:w-72 w-52" />
 
@@ -34,7 +15,7 @@ const Outro = () => {
           <img src="/images/x-logo.svg" className="md:w-52 w-40" />
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

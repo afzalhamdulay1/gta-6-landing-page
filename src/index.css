@@ -215,7 +215,7 @@ main {
     }
   }
   .final {
-    @apply relative h-dvh overflow-hidden;
+    @apply relative h-dvh overflow-hidden z-20;
 
     .final-content {
       @apply scale-110;
@@ -223,7 +223,7 @@ main {
   }
 
   .final-message {
-    @apply absolute w-full h-dvh overflow-hidden z-50 opacity-100;
+    @apply absolute w-full h-dvh overflow-hidden z-50 opacity-0 pointer-events-none;
   }
 }
 
