@@ -28,7 +28,7 @@
 }
 
 body {
-  width: 100dvw;
+  width: 100vw;
   overflow-x: hidden;
   font-family: "Round", sans-serif;
   background-color: black;
@@ -61,7 +61,7 @@ main {
 
 @layer components {
   main {
-    @apply w-dvw overflow-x-hidden;
+    @apply w-screen overflow-x-hidden;
   }
   nav {
     @apply fixed top-0 left-0 w-full flex justify-between items-center md:p-16 p-5 z-[100];
@@ -70,7 +70,7 @@ main {
     @apply md:text-[8rem] text-[5rem] font-round-bold !font-extrabold uppercase md:leading-[7rem] leading-[4.5rem] text-center bg-gradient-to-r from-pink-400 via-red-400 to-orange-400 bg-clip-text text-transparent;
   }
   .hero-section {
-    @apply w-dvw h-dvh relative overflow-hidden;
+    @apply w-screen h-screen relative overflow-hidden;
 
     .scale-out {
       @apply object-cover md:scale-125 h-full;
@@ -97,7 +97,7 @@ main {
     }
   }
   .entrance-message {
-    @apply absolute inset-0 w-full h-dvh overflow-hidden z-20 opacity-100;
+    @apply absolute inset-0 w-full h-screen overflow-hidden z-20 opacity-100;
 
     .entrance-logo {
       @apply w-[55%] md:w-[30%] lg:w-[15%] absolute top-[15vh] md:top-[17vh] lg:top-[15vh] left-1/2 -translate-x-1/2;
@@ -215,7 +215,7 @@ main {
     }
   }
   .final {
-    @apply relative h-dvh overflow-hidden;
+    @apply relative h-screen overflow-hidden;
 
     .final-content {
       @apply scale-110;
@@ -223,7 +223,7 @@ main {
   }
 
   .final-message {
-    @apply absolute w-full h-dvh overflow-hidden z-50 opacity-100;
+    @apply absolute w-full h-screen overflow-hidden z-50 opacity-100;
   }
 }
 

@@ -44,7 +44,7 @@ const SecondVideo = () => {
 
   return (
     <section className="lucia">
-      <div className="h-dvh">
+      <div className="h-screen">
         <video
           ref={videoRef}
           muted

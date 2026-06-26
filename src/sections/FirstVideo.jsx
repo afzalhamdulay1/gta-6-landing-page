@@ -46,7 +46,7 @@ const FirstVideo = () => {
   }, []);
   return (
     <section className="first-vd-wrapper">
-      <div className="h-dvh">
+      <div className="h-screen">
         <video
           ref={videoRef}
           muted
