@@ -57,11 +57,7 @@ const Hero = () => {
   return (
     <section className="hero-section">
       <div className="size-full mask-wrapper relative">
-        <img
-          src="/images/hero-bg.webp"
-          className="scale-out"
-          alt="background"
-        />
+        <img src="/images/fifa-bg.png" className="scale-out" alt="background" />
         <div className="absolute inset-0 bg-white opacity-0 mask-overlay pointer-events-none" />
         <img
           src="/images/hero-text.webp"

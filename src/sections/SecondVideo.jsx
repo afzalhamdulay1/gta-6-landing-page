@@ -30,7 +30,7 @@ const SecondVideo = () => {
       scrollVideo,
       {
         progress: 1,
-        duration: 3,
+        duration: 2,
         ease: "none",
         onUpdate: () => {
           if (video.duration && !video.seeking) {
@@ -50,10 +50,10 @@ const SecondVideo = () => {
           muted
           playsInline
           preload="auto"
-          src="/videos/video2-high.mp4"
+          src="/videos/messi.mp4"
           className="size-full object-cover second-vd"
           style={{
-            objectPosition: "15% 0%",
+            objectPosition: "70% 0%",
           }}
         />
       </div>

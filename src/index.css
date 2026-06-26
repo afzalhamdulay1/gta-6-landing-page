@@ -145,7 +145,7 @@ main {
     @apply relative;
   }
   .lucia-life {
-    @apply relative z-10 py-40 mt-60 flex lg:flex-row flex-col justify-between gap-5 w-dvw overflow-x-hidden;
+    @apply relative z-10 py-40 mt-60 flex lg:flex-row flex-col-reverse justify-between gap-5 w-dvw overflow-x-hidden;
 
     h1 {
       @apply text-yellow font-long uppercase text-8xl mb-20;

@@ -10,7 +10,7 @@ const ComingSoon = () => {
 
         <div className="text-wrapper">
           <h3 className="gradient-title">
-            Coming <br /> May 26th <br /> 2026
+            One <br /> Last <br /> Time
           </h3>
         </div>
 

@@ -37,32 +37,35 @@ const Lucia = () => {
     <section className="lucia-life">
       <div className="flex flex-col gap-5 items-end img-box lg:1/2 ps-10 mt-96">
         <div className="lucia-1">
-          <img src="/images/lucia-1.webp" />
+          <img src="/images/messi-1.avif" />
         </div>
         <div className="lucia-3">
-          <img src="/images/lucia-3.webp" />
+          <img src="/images/messi-2.jpg" />
         </div>
       </div>
 
       <div className="lg:w-1/2 lucia-life-content">
         <div className="max-w-xl lg:ps-32 ps-10">
-          <h1>Lucia Caminos</h1>
-          <h2>Lucia’s father taught her to fight as soon as she could walk.</h2>
+          <h1>Lionel Messi</h1>
+          <h2>The boy from Rosario who built an empire in Miami.</h2>
           <p>
-            Life has been coming at her swinging ever since. Fighting for her
-            family landed her in the Leonida Penitentiary. Sheer luck got her
-            out. Lucia’s learned her lesson — only smart moves from here.
+            Lionel Messi, the undisputed maestro of football, has settled in the
+            sun-drenched coast of Vice City. But for the GOAT, peace was never
+            an option. Navigating his legacy under the bright stadium lights, he
+            remains a target for rival syndicates and ambitious rivals looking
+            to claim his crown.
           </p>
         </div>
 
         <div className="lucia-2">
-          <img src="/images/lucia-2.webp" />
+          <img src="/images/messi-cup.webp" />
         </div>
 
         <p className="max-w-xl lg:ps-32 ps-10">
-          More than anything, Lucia wants the good life her mom has dreamed of
-          since their days in Liberty City — but instead of half-baked
-          fantasies, Lucia is prepared to take matters into her own hands.
+          Behind the golden trophies and stadium cheers lies a quiet
+          determination. Messi isn't just playing the game anymore — he's
+          running the city, making smart plays, and ensuring his legacy is
+          secured forever.
         </p>
       </div>
     </section>

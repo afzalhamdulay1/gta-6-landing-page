@@ -52,8 +52,11 @@ const FirstVideo = () => {
           muted
           playsInline
           preload="auto"
-          src="/videos/video1-high.mp4"
+          src="/videos/ronaldo_optimized.mp4"
           className="first-vd"
+          style={{
+            objectPosition: "50% 0%",
+          }}
         />
       </div>
     </section>
